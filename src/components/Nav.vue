@@ -1,7 +1,9 @@
 <template>
   <div>
     <div class="nav-receitas">
-      <img src="../assets/img/logoNav.png" alt="logo" />
+      <a href="/">
+        <img src="../assets/img/logoNav.png" alt="logo" />
+      </a>
       <div class="wrap">
         <div class="group-search">
           <input
@@ -14,21 +16,29 @@
           </button>
         </div>
       </div>
-      <div class="enviar">
+      <a href="/enviar-receita" class="enviar">
         <img src="../assets/img/shopping-list.png" alt="icon-shopping" />
         <span>ENVIE SUA RECEITA</span>
-      </div>
+      </a>
     </div>
   </div>
 </template>
 
 <script>
-export default {
-  
-};
+export default {};
 </script>
 
-<style >
+<style>
+a {
+  color: #C62828;
+}
+a:link {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+  color: #C62828;
+}
 .enviar {
   display: flex;
   flex-direction: column;
